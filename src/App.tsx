@@ -9,11 +9,11 @@ import {
   Grid,
   theme,
 } from "@chakra-ui/react"
-import { ColorModeSwitcher } from "./components/ColorModeSwitcher"
-import { Logo } from "./components/Logo"
+import { ColorModeSwitcher } from "./components/common/ColorModeSwitcher"
+import { Logo } from "./components/common/Logo"
 import { RouterProvider } from "react-router-dom"
-import privateRouter from "./routes/privateRoutes"
-import publicRouter from "./routes/publicRoutes"
+import { privateRouter } from "./routes/privateRoutes"
+import { publicRouter } from "./routes/publicRoutes"
 
 export const App = () => {
   const [authenticated, setAuthenticated] = React.useState<Boolean>(false)
