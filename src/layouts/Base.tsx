@@ -12,10 +12,9 @@ export const Base: React.FC<BaseProps> = ({ children }) => {
   return (
     <Box m={4}>
       <Header />
-      <HStack>
-        {/* <Sidebar /> */}
+      <VStack w={'100%'}>
         {children}
-      </HStack>
+      </VStack>
       <Footer />
     </Box>
   )

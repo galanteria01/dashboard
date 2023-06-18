@@ -4,6 +4,7 @@ import React from 'react'
 import { ColorModeSwitcher } from '../components/common/ColorModeSwitcher'
 import { SettingsIconButton } from '../components/common/SettingsIconButton'
 import { MenuIconButton } from '../components/common/MenuIconButton'
+import { Link } from 'react-router-dom'
 
 type HeaderProps = {
 
@@ -14,10 +15,13 @@ export const Header: React.FC<HeaderProps> = (props) => {
     <HStack m={4} maxW={'100vw'} justifyContent={'space-between'}>
       <HStack>
         <MenuIconButton />
-        <Image
-          src={'/dashboard.png'}
-          h={50}
-        />
+        <Link to={'/'}>
+          <Image
+            src={'/dashboard.png'}
+            h={50}
+          />
+        </Link>
+
       </HStack>
       <HStack>
         {/* <IconButton
